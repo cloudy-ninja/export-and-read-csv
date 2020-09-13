@@ -1,5 +1,5 @@
 <?php
-  // update string with the line break;
+  # update string with the line break;
   function getStrWithBreak($str) {
     $strArry = explode(PHP_EOL, $str);
     $length = count($strArry);
@@ -15,7 +15,7 @@
     return $newStr;
   }
 
-  // read data from csv
+  # read data from csv
   $primaryLang = array();
   $secondaryLang = array();
   $row = 1;
@@ -34,7 +34,7 @@
     fclose($handle);
   }
 
-  // write codes in the php file
+  # write codes in the php file
   function writePhp($dataArry, $fileName) {
     $langFile = fopen($fileName, "w") or die("Unable to open file!");
     $txt = "<?php\n";
