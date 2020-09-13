@@ -7,18 +7,50 @@
   include 'lang-vi.php';
   $secondaryLang = $vLang;
 
-  $html = "<table>";
-  foreach($primaryLang as $key => $value) {
-    $html .= "<tr>";
-    $html .= "<td>" . $value . "</td>";
-    if (array_key_exists($key, $secondaryLang)) {
-      $html .= "<td>" . $secondaryLang[$key] . "</td>";
-    } else {
-      $html .= "<td style='color: red;'>" . $primaryLang[$key] . "</td>";
-    }
-    $html .= "</tr>";
-  }
-  $html .= "</table>";
+  # generate array for csv
+  $csvArry = array();
+  foreach ($primaryLang as $key => $value) {
+    $itemArry = array();
+    $itemArry['My Reference'] = $key;
+    $itemArry['English'] = $value;
+    $itemArry['Translation'] = $secondaryLang[$key];
 
-  echo $html;
+    array_push($csvArry, $itemArry);
+  }
+
+  function arrayToCSV(array &$array)
+  {
+    if (count($array) == 0) {
+      return null;
+    }
+    ob_start();
+    $df = fopen("php://output", 'w');
+    fputcsv($df, array_keys(reset($array)));
+    foreach ($array as $row) {
+      fputcsv($df, $row);
+    }
+    fclose($df);
+    return ob_get_clean();
+  }
+
+  function download_send_headers($filename) {
+    // disable caching
+    $now = gmdate("D, d M Y H:i:s");
+    header("Expires: Tue, 03 Jul 2022 06:00:00 GMT");
+    header("Cache-Control: max-age=0, no-cache, must-revalidate, proxy-revalidate");
+    header("Last-Modified: {$now} GMT");
+
+    // force download
+    header("Content-Type: application/force-download");
+    header("Content-Type: application/octet-stream");
+    header("Content-Type: application/download");
+
+    // disposition / encoding on response body
+    header("Content-Disposition: attachment;filename={$filename}");
+    header("Content-Transfer-Encoding: binary");
+  }
+
+  download_send_headers("data_export_" . date("Y-m-d") . ".csv");
+  echo arrayToCSV($csvArry);
+  die();
 ?>
