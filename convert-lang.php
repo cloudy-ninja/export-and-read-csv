@@ -19,7 +19,7 @@
   $primaryLang = array();
   $secondaryLang = array();
   $row = 1;
-  if (($handle = fopen("test.csv", "r")) !== FALSE) {
+  if (($handle = fopen("Text-to-Translate.csv", "r")) !== FALSE) {
     while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
       if($row == 1) {
         $row++;
@@ -46,9 +46,9 @@
     fwrite($langFile, $txt);
     foreach ($dataArry as $key => $value) {
       if(strpos($key, 'comment') !== false) {
-        $txt = "\r\n  ".$value."\r\n";
+        $txt = "\r\n".$value."\r\n";
       } else {
-        $txt = "  $$key = $value;\r\n";
+        $txt = "$$key = $value;\r\n";
       }
       fwrite($langFile, $txt);
     }
@@ -57,6 +57,6 @@
     fclose($langFile);
   }
 
-  writePhp($primaryLang, 'lang-enn.php');
-  writePhp($secondaryLang, 'lang-vin.php');
+  writePhp($primaryLang, 'lang-en.php');
+  writePhp($secondaryLang, 'lang-vi.php');
 ?>

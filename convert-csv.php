@@ -6,11 +6,11 @@
   echo "\xEF\xBB\xBF";
 
   # import secondary language data
-  include 'lang-vin.php';
+  include 'lang-vi.php';
   $secondaryLang = $vLang;
 
   # remove unnecessary line breaks
-  $content = file_get_contents('lang-enn.php');
+  $content = file_get_contents('lang-en.php');
   preg_replace( "/\r|\n/", "", $content );
   $strArry = explode(PHP_EOL, $content);
 
@@ -19,17 +19,14 @@
     array('My Reference', 'English', 'Translation')
   );
   for ($i=0; $i < count($strArry) ; $i++) {
-    // echo($strArry[$i]);
     $itemArry = array();
     if(strpos($strArry[$i], '//') !== false) {
-      // echo("comment \n");
       preg_replace( "/\r|\n/", "", $strArry[$i] );
 
       array_push($csvArry, array(''));
       array_push($itemArry, $strArry[$i]);
       array_push($csvArry, $itemArry);
     } elseif (strpos($strArry[$i], '$vLang') !== false) {
-      // echo("code \n");
 
       $keyStartPoint = strpos($strArry[$i],"['") + 2; // because of ['
       $keyEndPoint = strpos($strArry[$i],"']");
