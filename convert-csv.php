@@ -21,10 +21,12 @@
   }
 
   # generate csv from array
-  header("Content-type: text/csv");
+  header('Content-Encoding: UTF-8');
+  header("content-type:application/csv;charset=UTF-8");
   header("Content-Disposition: attachment; filename=Text-to-Translate.csv");
   header("Pragma: no-cache");
   header("Expires: 0");
+  echo "\xEF\xBB\xBF";
 
   function generateCSV($data) {
     $output = fopen("php://output", "w");
