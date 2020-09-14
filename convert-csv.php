@@ -8,12 +8,14 @@
   $secondaryLang = $vLang;
 
   # generate array for csv
-  $csvArry = array();
+  $csvArry = array(
+    array('My Reference', 'English', 'Translation')
+  );
   foreach ($primaryLang as $key => $value) {
     $itemArry = array();
-    $itemArry['My Reference'] = $key;
-    $itemArry['English'] = $value;
-    $itemArry['Translation'] = $secondaryLang[$key];
+    array_push($itemArry, $key);
+    array_push($itemArry, $value);
+    array_push($itemArry, $secondaryLang[$key]);
 
     array_push($csvArry, $itemArry);
   }
