@@ -27,8 +27,13 @@
       }
       $num = count($data);
       $row++;
-      $primaryLang["vLang['".$data[0]."']"] = '"'.getStrWithBreak($data[1]).'"';
-      $secondaryLang["vLang['".$data[0]."']"] = '"'.getStrWithBreak($data[2]).'"';
+      if(strpos($data[0], '//') !== false) {
+        $primaryLang['comment'.$row] = $data[0];
+        $secondaryLang['comment'.$row] = $data[0];
+      } elseif(strlen($data[0]) > 0) {
+        $primaryLang["vLang['".$data[0]."']"] = '"'.getStrWithBreak($data[1]).'"';
+        $secondaryLang["vLang['".$data[0]."']"] = '"'.getStrWithBreak($data[2]).'"';
+      }
 
     }
     fclose($handle);
@@ -37,10 +42,14 @@
   # write codes in the php file
   function writePhp($dataArry, $fileName) {
     $langFile = fopen($fileName, "w") or die("Unable to open file!");
-    $txt = "<?php\n";
+    $txt = "<?php\r\n";
     fwrite($langFile, $txt);
     foreach ($dataArry as $key => $value) {
-      $txt = "  $$key = $value;\n";
+      if(strpos($key, 'comment') !== false) {
+        $txt = "\r\n  ".$value."\r\n";
+      } else {
+        $txt = "  $$key = $value;\r\n";
+      }
       fwrite($langFile, $txt);
     }
     $txt = "?>";
