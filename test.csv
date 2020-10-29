@@ -1,83 +1,132 @@
-My Reference,English,Translation
-buyer,Buyer,Người mua
-supplier,Supplier,Người bán
-serviceprovider,Service Provider,Nhà cung cấp dịch vụ
-3rdpartysp,3rd Party Service Provider,Nhà cung cấp dịch vụ bên thứ 3
-firstname,First Name,Tên
-lastname,Last Name,Họ
-emailaddress,Email Address,Địa chỉ email
-phone number,Phone Number,Số điện thoại
-country,Country,Quốc gia
-selectcountry,Select Country,Chọn quốc gia
-reg-agreement,"I have read and I agree to the terms, privacy and offer details","Tôi đã đọc và đồng ý với các điều khoản, quyền riêng tư và thông tin khuyến mãi khác"
-getstarted,Get Started,Bắt đầu
-field-req,This is a required field.,Đây là mục bắt buộc.
-email-req,A valid email is required.,Địa chỉ email hợp lệ là bắt buộc.
-email-exists,Email address already exists.,Địa chỉ email đã tồn tại.
-agree-terms,You need to agree to the Terms and Conditions.,Bạn phải đồng ý với các Điều khoản và Điều kiện.
-australia,Australia,Úc
-china,China,Trung Quốc
-hong kong,Hong Kong,Hồng Kông
-new zealand,New Zealand,New Zealand
-united kingdom,United Kingdom,Hoa Kỳ
-united states,United States,United States
-vietnam,Vietnam,Việt Nam
-registration,Registration,Đăng ký
-30daytrial,30 Day Free Trial,30 ngày dùng thử
-nocreditcardreq,No credit card required,Không yêu cầu thẻ tín dụng
-reg-suporser,Register as a [SUPPLIER-LINK] or a [SERVICEPROVIDER-LINK].,Đăng ký với tư cách là [SUPPLIER-LINK] hoặc [SERVICEPROVIDER-LINK].
-e-confirm-sub,[Frethan] Confirm your email address,[Frethan] Xác nhận địa chỉ email của bạn
-e-confirm-body,"Hi [FIRST-NAME],
+﻿"My Reference",English,Translation
 
-We'd like to make sure we got your email address right.","Xin chào [FIRST-NAME],
+"// General / Common"
+buyer,Buy,"Người mua"
+supplier,Suppli,"Người bán"
+serviceprovider,"Service Provid","Nhà cung cấp dịch vụ"
+3rdpartysp,"3rd Party Service Provid","Nhà cung cấp dịch vụ bên thứ 3"
+
+"// Form Fields"
+firstname,"First Na",Tên
+lastname,"Last Na",Họ
+emailaddress,"Email Addre","Địa chỉ email"
+"phone number","Phone Numb","Số điện thoại"
+country,Count,"Quốc gia"
+selectcountry,"Select Count","Chọn quốc gia"
+reg-agreement,"I have read and I agree to the terms, privacy and offer detai","Tôi đã đọc và đồng ý với các điều khoản, quyền riêng tư và thông tin khuyến mãi khác"
+getstarted,"Get Start","Bắt đầu"
+
+"// Form Fields - Errors"
+field-req,"This is a required fiel","Đây là mục bắt buộc."
+email-req,"A valid email is require","Địa chỉ email hợp lệ là bắt buộc."
+email-exists,"Email address already exist","Địa chỉ email đã tồn tại."
+agree-terms,"You need to agree to the Terms and Condition","Bạn phải đồng ý với các Điều khoản và Điều kiện."
+
+"// Countries"
+australia,Austral,Úc
+china,Chi,"Trung Quốc"
+"hong kong","Hong Ko","Hồng Kông"
+"new zealand","New Zeala","New Zealand"
+"united kingdom","United Kingd","Hoa Kỳ"
+"united states","United Stat","United States"
+vietnam,Vietn,"Việt Nam"
+
+"// Form Fields - Content"
+registration,Registrati,"Đăng ký"
+30daytrial,"30 Day Free Tri","30 ngày dùng thử"
+nocreditcardreq,"No credit card requir","Không yêu cầu thẻ tín dụng"
+reg-suporser,"Register as a [SUPPLIER-LINK] or a [SERVICEPROVIDER-LINK","Đăng ký với tư cách là [SUPPLIER-LINK] hoặc [SERVICEPROVIDER-LINK]."
+
+"// Email - Registration"
+e-confirm-sub,"[Frethan] Confirm your email addre","[Frethan] Xác nhận địa chỉ email của bạn"
+e-confirm-body,"Hi [FIRST-NAME],<br />
+<br />
+We'd like to make sure we got your email address righ","Xin chào [FIRST-NAME],
 
 Chúng tôi muốn đảm bảo chúng tôi nhận được đúng địa chỉ email của bạn."
-e-confirm-Link,"Yes, it's correct","Đúng, chính xác"
-e-support,"If you have any questions, contact us at [SUPPORT-LINK]","Nếu bạn có bất kỳ câu hỏi nào, hãy liên hệ với chúng tôi tại [SUPPORT-LINK]"
-reg-esent-L1,"[FIRST-NAME], check your inbox.","[FIRST-NAME], hãy kiểm tra hộp thư của bạn."
-reg-esent-L2,"Confirm your email address, [EMAIL]","Xác nhận địa chỉ email của bạn, [EMAIL]"
-reg-emailalready,Email has already been confirmed.,Email đã được xác nhận.
-reg-issues,Having Issues?,Bạn vẫn gặp sự cố?
-reg-support,"If you need assistance, contact us [SUPPORT-LINK]","Nếu bạn cần trợ giúp, hãy liên hệ với chúng tôi [SUPPORT-LINK]"
-activate,Activate Your Account,Kích hoạt tài khoản của bạn
-pass-req,"Your password needs to contain at least 10 characters, including 1 or more numbers.","Mật khẩu của bạn phải chứa ít nhất 10 ký tự, bao gồm 1 chữ số trở lên."
-pass-tip,Password Tip:,Mẹo đặt mật khẩu:
-pass-tip-txt,Create your password using a unique phrase that includes numbers and symbols like %.,Tạo mật khẩu của bạn bằng cụm từ duy nhất chứa các chữ số và các biểu tượng như %.
-pass-err-len,Your password length needs to be between 10 to 50 characters long.,Mật khẩu của bạn phải dài từ 10 đến 50 ký tự.
-pass-err-num,Your password needs to contain a number.,Mật khẩu của bạn phải chứa một chữ số.
-password,Password,Mật khẩu
-set-password,Set Password,Đặt mật khẩu
-con-password,Confirm Password,Xác nhật mật khẩu
-issue-head,Having Issues?,Having Issues?
-issue-se-head,Session Expired,Session Expired
-issue-se,You will need to click on the link if your email again.,You will need to click on the link if your email again.
-issue-uif-head,User Creation Failed,User Creation Failed
-issue-uif,"An issue occurred, and your profile failed to activate fully. We have been notified and will look into this for you.","An issue occurred, and your profile failed to activate fully. We have been notified and will look into this for you."
-issue-paa-head,Profile Already Activated,Profile Already Activated
-issue-paa,Your profile is already activated; click [LOGIN-URL] to login.,Your profile is already activated; click [LOGIN-URL] to login.
-issue-ev-head,Email Verification,Email Verification
-issue-ev,You need to verify your email address; check your email inbox.,You need to verify your email address; check your email inbox.
-issue-ns-head,Issue Detected,Issue Detected
-issue-ns,We have been notified of this issue and will look into it.,We have been notified of this issue and will look into it.
-issue-nf-head,Registration Not Found,Registration Not Found
-issue-nf,"Please check the link in your email is not broken, as we are unable to find your registration.","Please check the link in your email is not broken, as we are unable to find your registration."
-issue-ban-head,Profile Banned,Profile Banned
-issue-ban,Your profile is currently banned.,Your profile is currently banned.
-acc,Account,Account
-dash,Dashboard,Dashboard
-dash-acc,Account Dashboard,Account Dashboard
-dash-buy,Buyer Dashboard,Buyer Dashboard
-dash-sup,Supplier Dashboard,Supplier Dashboard
-dash-ser,Service Dashboard,Service Dashboard
-kyc-ver,Verified,Verified
-kyc-ver-req,Verification Required,Verification Required
-kyc-ver-wai,Waiting Approval,Waiting Approval
-kyc-ver-rej,"Rejected, Check your Details","Rejected, Check your Details"
-kyc-ver-ban,Access Denied,Access Denied
-kyc-req,Requirements,Requirements
-kyc-req-txt,"Due to government regulations, you are required to be 18 years or older. You will need to supply identification for age and verification of your identity.","Due to government regulations, you are required to be 18 years or older. You will need to supply identification for age and verification of your identity."
-eth-add,Ethereum Address,Ethereum Address
-com-save,Save,Save
-com-edit,Edit,Edit
-com-sub,Back,Back
-user-nf,User Account Not Found,User Account Not Found
+e-confirm-Link,"Yes, it's corre","Đúng, chính xác"
+
+"// Email - Support Link"
+e-support,"If you have any questions, contact us at [SUPPORT-LIN","Nếu bạn có bất kỳ câu hỏi nào, hãy liên hệ với chúng tôi tại [SUPPORT-LINK]"
+
+"// Email Sent - Page indicates Email Sent"
+reg-esent-L1,"[FIRST-NAME], check your inbo","[FIRST-NAME], hãy kiểm tra hộp thư của bạn."
+reg-esent-L2,"Confirm your email address, [EMAI","Xác nhận địa chỉ email của bạn, [EMAIL]"
+reg-emailalready,"Email has already been confirme","Email đã được xác nhận."
+reg-issues,"Having Issue","Bạn vẫn gặp sự cố?"
+reg-support,"If you need assistance, contact us [SUPPORT-LIN","Nếu bạn cần trợ giúp, hãy liên hệ với chúng tôi [SUPPORT-LINK]"
+
+"// Activate Account & Set Password"
+activate,"Activate Your Accou","Kích hoạt tài khoản của bạn"
+pass-req,"Your password needs to contain at least 10 characters, including 1 or more number","Mật khẩu của bạn phải chứa ít nhất 10 ký tự, bao gồm 1 chữ số trở lên."
+pass-tip,"Password Ti","Mẹo đặt mật khẩu:"
+pass-tip-txt,"Create your password using a unique phrase that includes numbers and symbols like ","Tạo mật khẩu của bạn bằng cụm từ duy nhất chứa các chữ số và các biểu tượng như %."
+pass-err-len,"Your password length needs to be between 10 to 50 characters lon","Mật khẩu của bạn phải dài từ 10 đến 50 ký tự."
+pass-err-num,"Your password needs to contain a numbe","Mật khẩu của bạn phải chứa một chữ số."
+password,Passwo,"Mật khẩu"
+set-password,"Set Passwo","Đặt mật khẩu"
+con-password,"Confirm Passwo","Xác nhật mật khẩu"
+
+//--------------------------------------------------------//
+
+"// Issues Detected"
+
+"// Heading for when page viewed without an issue code"
+issue-head,"Having Issue","Having Issues?"
+
+"// Code Passed: se"
+issue-se-head,"Session Expir","Session Expired"
+issue-se,"You will need to click on the link if your email agai","You will need to click on the link if your email again."
+
+"// Code Passed: uif / wuf"
+issue-uif-head,"User Creation Fail","User Creation Failed"
+issue-uif,"An issue occurred, and your profile failed to activate fully. We have been notified and will look into this for yo","An issue occurred, and your profile failed to activate fully. We have been notified and will look into this for you."
+
+"// Code Passed: paa"
+issue-paa-head,"Profile Already Activat","Profile Already Activated"
+issue-paa,"Your profile is already activated; click [LOGIN-URL] to logi","Your profile is already activated; click [LOGIN-URL] to login."
+
+"// Code Passed: ev"
+issue-ev-head,"Email Verificati","Email Verification"
+issue-ev,"You need to verify your email address; check your email inbo","You need to verify your email address; check your email inbox."
+
+"// Code Passed: ns"
+issue-ns-head,"Issue Detect","Issue Detected"
+issue-ns,"We have been notified of this issue and will look into i","We have been notified of this issue and will look into it."
+
+"// Code Passed: nf"
+issue-nf-head,"Registration Not Fou","Registration Not Found"
+issue-nf,"Please check the link in your email is not broken, as we are unable to find your registratio","Please check the link in your email is not broken, as we are unable to find your registration."
+
+"// Code Passed: ban"
+issue-ban-head,"Profile Bann","Profile Banned"
+issue-ban,"Your profile is currently banne","Your profile is currently banned."
+
+"// Dashboards"
+acc,Accou,Account
+dash,Dashboa,Dashboard
+dash-acc,"Account Dashboa","Account Dashboard"
+dash-buy,"Buyer Dashboa","Buyer Dashboard"
+dash-sup,"Supplier Dashboa","Supplier Dashboard"
+dash-ser,"Service Dashboa","Service Dashboard"
+
+"// Verification - KYC"
+kyc-ver,Verifi,Verified
+kyc-ver-req,"Verification Requir","Verification Required"
+kyc-ver-wai,"Waiting Approv","Waiting Approval"
+kyc-ver-rej,"Rejected, Check your Detai","Rejected, Check your Details"
+kyc-ver-ban,"Access Deni","Access Denied"
+kyc-req,Requiremen,Requirements
+kyc-req-txt,"Due to government regulations, you are required to be 18 years or older. You will need to supply identification for age and verification of your identit","Due to government regulations, you are required to be 18 years or older. You will need to supply identification for age and verification of your identity."
+
+"// Ethereum"
+eth-add,"Ethereum Addre","Ethereum Address"
+
+"// Common"
+com-save,Sa,Save
+com-edit,Ed,Edit
+com-sub,Subm,Back
+com-sub,Ba,Back
+
+"// User Profile"
+user-nf,"User Account Not Fou","User Account Not Found"
